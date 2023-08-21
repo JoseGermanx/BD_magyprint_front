@@ -1,0 +1,84 @@
+/*css de la imagen de la ubicacion y horario de atencion*/
+#contacto .ubicacion img{
+    padding-top: 60px;
+    width: 200%;
+    height: auto;
+}
+.reloj img{
+    height: 35px;
+    width: auto;
+}
+#contacto .no-resize {
+    resize: none;
+  }
+  #contacto .just{
+    margin-left: 30px;
+    display: flex;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#contacto .horario{
+    margin-left: 4px;
+    margin-top: 8px;
+    font-size: 20px;
+}
+#contacto .atencion{
+    margin-left: 65px;
+}
+#contacto .color-titulo h1{
+    color: #51918c;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+
+  
+
+
+#contacto .margen-top{
+    margin-top: 50px;
+}
+
+#contacto .fondo{
+    background-color: red;
+} 
+
+#contacto .grid{
+    display: flex;
+}
+#contacto .ubi span{
+    margin-left: 40%;
+}
+#contacto .ubi img{
+    margin-left: 50%;
+}
+#contacto .ubi p{
+    margin-left: 10%;
+    text-align: center;
+}
+#contacto .email img{
+    margin-left: 40%;
+}
+#contacto .email span{
+    margin-left: 38%;
+}
+#contacto .email p{
+    text-align: center;
+    margin-right: 10%;
+}
+#contacto .fono img{
+    margin-left: 30%;
+}
+#contacto .fono span{
+    margin-left: 25%;
+}
+#contacto .fono p{
+    margin-left: 20%;
+}
+
+/*mapa api*/
+#mapa {
+  margin-top: 50px;
+  height: 400px;
+  width: auto;
+}
