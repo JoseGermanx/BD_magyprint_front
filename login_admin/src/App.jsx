@@ -18,6 +18,7 @@ import InicioPage from "./pages/InicioPage";
 import EmpresaPage from "./pages/EmpresaPage";
 import NosotrosPage from "./pages/NosotrosPage";
 import ContactoPage from "./pages/ContactoPage";
+import CatalogoPage from "./pages/CatalogoPage";
 
 import ProtectedRoute from "./ProtectedRoute";
 
@@ -33,6 +34,7 @@ function App() {
 
           <Route path="/" element={<InicioPage />} />
           <Route path="/empresa" element={<EmpresaPage />} />
+          <Route path="/catalogo" element={<CatalogoPage />} />
           <Route path="/nosotros" element={<NosotrosPage />} />
           <Route path="/contacto" element={<ContactoPage />} />
 

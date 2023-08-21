@@ -55,9 +55,7 @@ useEffect(() => {
     siguiente();
   }, 5000);
 
-  slideshow.current.addEventListener('mouseenter', () => {
-    clearInterval(intervalo);
-  })
+ 
 }, []);
 
   const { posts } = usePosts();

@@ -1,8 +1,9 @@
-import "../css/empresa.css"
 
-export function PostEmpresa({post}) {
-  return (
-    <div>      
+import "../css/empresa.css";
+
+function Cards ({post}) {
+    return (  
+        <div>      
         <div id="cards">
             <figure>
             {post.image && (<img src={post.image.url} />)}
@@ -14,7 +15,7 @@ export function PostEmpresa({post}) {
             </div>
         </div>
     </div>
-  )
+    );
 }
 
-export default PostEmpresa
+export default Cards;
