@@ -51,7 +51,7 @@ export function PostInicio() {
 }
 
 useEffect(() => {
-  const intervalo = setInterval(() => {
+  setInterval(() => {
     siguiente();
   }, 5000);
 

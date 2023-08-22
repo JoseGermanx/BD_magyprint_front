@@ -30,7 +30,7 @@ function PostSliderHome() {
     <div>
         <NavbarAdmin/>
     <div className="flex h-[calc(100vh-100px)] items-center justify-center">
-      <div className="bg-zinc-800 p-10 shadow-md shadow-black max-w-md w-full rounded-md">
+      <div className="bg-zinc-800 text-white p-10 shadow-md shadow-black max-w-md w-full rounded-md">
         <header className="flex justify-between items-center py-4">
           <h3 className="text-xl">Nuevo Producto Empresa</h3>
           <Link to="/slider" className="text-gray-400 text-sm hover:text-gray-300">

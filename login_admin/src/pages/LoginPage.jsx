@@ -25,7 +25,7 @@ function LoginPage() {
     <div>
         <NavbarAdmin/>
     <div className="flex h-[calc(100vh-100px)] items-center justify-center">
-      <div className="bg-zinc-800 max-w-md w-full p-10 rounded-md">
+      <div className="bg-zinc-800 text-white max-w-md w-full p-10 rounded-md">
         {signinErrors.map((error, i) => (
           <div className="bg-red-500 p-2 text-white text-center" key={i}>
             {error}

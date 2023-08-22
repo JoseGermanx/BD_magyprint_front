@@ -6,7 +6,7 @@ function NavbarAdmin() {
   const { isAuthenticated, logout } = useAuth();
 
   return (
-    <nav className="bg-zinc-800 py-4 px-10 items-center">
+    <nav className="bg-zinc-800 text-white py-4 px-10 items-center">
       <div className="grid gap-x-2 items-center grid-cols-3 gap-2">
         {isAuthenticated ? (
           <>
