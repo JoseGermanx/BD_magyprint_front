@@ -2,7 +2,9 @@ import tazon from "../imagenes/tazon1.jpeg";
 import tazon2 from "../imagenes/tazon11.jpeg";
 import tazon3 from "../imagenes/tazon111.jpeg";
 import "../css/detalle.css";
-import Cards from './Cards'
+import PostDetalleImg from './PostDetalle'
+
+import { usePosts } from "../context/PostContext";
 
 
 
@@ -14,6 +16,7 @@ import Cards from './Cards'
   } */
 
 function Detalle() {
+    const { posts } = usePosts();
     
     return (
 
@@ -27,7 +30,7 @@ function Detalle() {
             <div >
               
             {posts.map((post) => (
-                            <Cards post={post} key={post._id} />
+                            <PostDetalleImg post={post} key={post._id} />
                             ))} 
              
                </div>
