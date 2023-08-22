@@ -1,8 +1,13 @@
 
-import "../css/empresa.css";
+import "../css/Cards.css";
+
+import { useNavigate } from "react-router-dom";
 
 function Cards ({post}) {
+    const navigate = useNavigate();
     return (  
+        <div onClick={() => navigate(`/catalogo/${post._id}`)}
+    >
         <div>      
         <div id="cards">
             <figure>
@@ -14,6 +19,7 @@ function Cards ({post}) {
               <a href="#">Cotizar</a>
             </div>
         </div>
+    </div>
     </div>
     );
 }

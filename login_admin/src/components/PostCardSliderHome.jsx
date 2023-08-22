@@ -11,7 +11,7 @@ export function PostCardSliderHome({ post }) {
     const handelDelete = (id) => {
         toast((t) =>(
             <div className=" text-black text-center p-2">
-                <p className="m-4">Esta seguro que quiere Eliminar? <strong>{post.title}</strong></p>
+                <p className="m-4">Esta seguro que quiere Eliminar? <strong>{post.image && (<img src={post.image.url}/>)}</strong></p>
                 <div>
                     <button className="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4  rounded-sm mx-2" onClick={() =>{ deletePost(id); toast.dismiss(t.id);}}>
                         Aceptar

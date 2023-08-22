@@ -19,6 +19,7 @@ import EmpresaPage from "./pages/EmpresaPage";
 import NosotrosPage from "./pages/NosotrosPage";
 import ContactoPage from "./pages/ContactoPage";
 import CatalogoPage from "./pages/CatalogoPage";
+import DetallePage from "./pages/DetallePage";
 
 import ProtectedRoute from "./ProtectedRoute";
 
@@ -37,6 +38,7 @@ function App() {
           <Route path="/catalogo" element={<CatalogoPage />} />
           <Route path="/nosotros" element={<NosotrosPage />} />
           <Route path="/contacto" element={<ContactoPage />} />
+          <Route path="/catalogo/:id" element={<DetallePage />} />
 
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
