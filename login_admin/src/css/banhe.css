@@ -1,5 +1,5 @@
 /* grid para toda la pagina */
-.container-fluid {
+#h-m .container-fluid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1em;
@@ -7,29 +7,29 @@
   }
   /* grid logo y navbar */
   
-  .container-fluid:nth-child(1) {
+  #header-magy .container-fluid:nth-child(1) {
     grid-column: 1/2 !important;
   }
   
-  .container-fluid:nth-child(2) {
+  #header-magy .container-fluid:nth-child(2) {
     grid-column: 2/3 !important;
   }
   
-  .logo {
-    grid-column: 1/2;
+  #header-magy .logo {
+    grid-column: 1/2!important;;
   }
   
-  .navbar {
+  #header-magy .navbar {
     grid-column: 2/3 !important;
   }
   
-  .nav-item Link {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    text-decoration: none;
-    color: rgb(110, 107, 107);
-    margin-right: 40px;
-    justify-content: end;
+  #header-magy .nav-item Link {
+    font-family: 'Roboto', sans-serif !important;;
+    font-size: 15px !important;;
+    text-decoration: none !important;;
+    color: rgb(110, 107, 107) !important;;
+    margin-right: 40px !important;;
+    justify-content: end !important;;
   }
   
   /* fin header */

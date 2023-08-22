@@ -4,8 +4,8 @@ import "../css/banhe.css"
 
 function Header() {
     return (
-        <nav className="navbar navbar-expand-lg bg-body-white">
-        <div className="container-fluid">
+        <nav id='header-magy' className="navbar navbar-expand-lg bg-body-white">
+        <div id='h-m' className="container-fluid">
             <div className='logo'>
                <a href="/"> <img src={logo} alt=""/></a>
             </div>
