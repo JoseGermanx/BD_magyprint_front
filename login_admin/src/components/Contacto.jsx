@@ -80,11 +80,7 @@ function Contacto() {
                             <textarea className="form-control no-resize rounded-4" id="mensaje" name="mensaje" rows="4"
                                 required></textarea>
                         </div>
-                        <div className="mb-3">
-                            <label for="formFile" className="form-label">Sube tu imagen</label>
-                            <input className="form-control" type="file" id="formFile" accept=".jpg, .png, .gif"
-                                title="Selecciona un archivo" />
-                        </div>
+                        
                         <button type="submit" className="boton-c">Enviar</button>
                     </form>
                 </div>
