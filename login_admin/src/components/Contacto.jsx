@@ -16,7 +16,7 @@ function Contacto() {
             });
     };
 
-    return (
+    return ( 
         <div className="container-fluid">
             <div className="category-fluid">
                 <div className="ubicacion-c">

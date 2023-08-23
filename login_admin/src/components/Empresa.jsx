@@ -104,7 +104,7 @@ function Empresa() {
                   name="servicio[]" />
                 <label className="form-check-label" for="opcion5">Vestimenta</label>
               </div>
-            </div>
+            </div> 
 
             <div className="mb-3">
               <label for="mensaje" className="form-label">Mensaje<span className="text-danger">*</span></label>
