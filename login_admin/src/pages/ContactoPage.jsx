@@ -4,7 +4,10 @@ import Bannercon from "../components/Bannercon";
 import Footer from "../components/Footer";
 
 
+
 const ContactoPage = () =>{
+    
+
     return(
         <div className="bg-white text-black">
         <Header />

@@ -1,7 +1,22 @@
-import "../css/contacto.css"
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import "../css/contacto.css";
 
 function Contacto() {
-    return (
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_c6mrytj', 'template_4p809k9', form.current, '_ePqjP4LpMNBAp7BQ')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
+
+    return ( 
         <div className="container-fluid">
             <div className="category-fluid">
                 <div className="ubicacion-c">
@@ -23,21 +38,17 @@ function Contacto() {
             <div className="grid-inferior-fluid">
                 <div className="formulario">
                     <h2>CUÉNTANOS TU PROYECTO</h2>
-                    <h5>Todos los campos marcados con un asterisco (*) son obligatorios.</h5>
-                    <form id="projectForm">
-                        <div className="mb-3">
-                            <label for="nombre" className="form-label">Nombre<span className="text-danger">*</span></label>
-                            <input type="text" className="form-control rounded-4 " id="nombre" name="nombre" required />
-                        </div>
+                    <h5>Todos los campos marcados con un asterisco (*) son obligatorios <br />.</h5>
+                    <form id="projectForm" ref={form} onSubmit={sendEmail}>
 
                         <div className="mb-3">
-                            <label for="apellido" className="form-label">Apellido<span className="text-danger">*</span></label>
-                            <input type="text" className="form-control rounded-4" id="apellido" name="apellido" required />
+                            <label for="nombre" className="form-label">Nombre<span className="text-danger">*</span></label>
+                            <input type="text" className="form-control rounded-4 " id="nombre" name="user_name" required />
                         </div>
 
                         <div className="mb-3">
                             <label for="email" className="form-label">Email<span className="text-danger">*</span></label>
-                            <input type="email" className="form-control rounded-4" id="email" name="email" required />
+                            <input type="email" className="form-control rounded-4" id="email" name="user_email" required />
                         </div>
 
 
@@ -49,27 +60,27 @@ function Contacto() {
                         <div className="mb-3">
                             <label for="servicio" className="form-label">Servicio</label>
                             <div className="form-check">
-                                <input className="form-check-input" type="checkbox" value="opcion1" id="opcion1"
+                                <input className="form-check-input" type="checkbox" value="Bordado" id="opcion1"
                                     name="servicio[]" />
                                 <label className="form-check-label" for="opcion1">Bordado</label>
                             </div>
                             <div className="form-check">
-                                <input className="form-check-input" type="checkbox" value="opcion2" id="opcion2"
+                                <input className="form-check-input" type="checkbox" value="Impresión Directa(DTG)" id="opcion2"
                                     name="servicio[]" />
                                 <label className="form-check-label" for="opcion2">Impresión Directa(DTG)</label>
                             </div>
                             <div className="form-check">
-                                <input className="form-check-input" type="checkbox" value="opcion3" id="opcion3"
+                                <input className="form-check-input" type="checkbox" value="Estampado Vinilo" id="opcion3"
                                     name="servicio[]" />
                                 <label className="form-check-label" for="opcion3">Estampado Vinilo</label>
                             </div>
                             <div className="form-check">
-                                <input className="form-check-input" type="checkbox" value="opcion4" id="opcion4"
+                                <input className="form-check-input" type="checkbox" value="Estampado DTF" id="opcion4"
                                     name="servicio[]" />
                                 <label className="form-check-label" for="opcion4">Estampado DTF</label>
                             </div>
                             <div className="form-check">
-                                <input className="form-check-input" type="checkbox" value="opcion5" id="opcion5"
+                                <input className="form-check-input" type="checkbox" value="Impresión Digital" id="opcion5"
                                     name="servicio[]" />
                                 <label className="form-check-label" for="opcion5">Impresión Digital</label>
                             </div>
@@ -77,15 +88,11 @@ function Contacto() {
 
                         <div className="mb-3">
                             <label for="mensaje" className="form-label">Mensaje<span className="text-danger">*</span></label>
-                            <textarea className="form-control no-resize rounded-4" id="mensaje" name="mensaje" rows="4"
+                            <textarea className="form-control no-resize rounded-4" id="mensaje" name="message" rows="4"
                                 required></textarea>
                         </div>
-                        <div className="mb-3">
-                            <label for="formFile" className="form-label">Sube tu imagen</label>
-                            <input className="form-control" type="file" id="formFile" accept=".jpg, .png, .gif"
-                                title="Selecciona un archivo" />
-                        </div>
-                        <button type="submit" className="boton-c">Enviar</button>
+
+                        <button type="submit" className="bg-[#3fa09b] hover:bg-[#177571] px-4 py-2 rounded mt-2 text-white focus:outline-none disabled:gb-indigo-400" value="Send">Enviar</button>
                     </form>
                 </div>
                 <div className="hor-ubi">
