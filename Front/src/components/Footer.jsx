@@ -27,8 +27,9 @@ function Footer() {
             <img src={ig} className="ig" />
             <p className="font-medium">magy_print_imprimetuidea</p>
           </a>
+          <br />
           <a className="link-ws" href="https://api.whatsapp.com/send/?phone=%2B56962610425&text=Hola%2C+necesito+informaci%C3%B3n+de+sus+productos" target="_blank">
-            <h5 className="font-bold">Contactanos</h5>
+            <h5 className="font-bold">Contáctanos</h5>
             <img src={wsp} className="wasap" />
             <p className="font-medium">+569 62610425</p>
           </a>

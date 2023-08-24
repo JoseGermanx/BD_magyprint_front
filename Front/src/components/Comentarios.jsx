@@ -12,7 +12,7 @@ import "../css/comentarioslide.css";
 function Comentarios() {
   return (
     <div id="comentario" className="container-fluid">
-      <h2 className="titulos">Confian en nosotros</h2>
+      <h2 className="titulos">Confían en nosotros</h2>
       <div id="carouselExampleIndicators3" className="carousel slide">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" className="active"
@@ -39,7 +39,7 @@ function Comentarios() {
                   <div className="img-area">
                     <img src={dulce} alt="" className="imagen-central"/>
                   
-                    <h2 className="titulotarjeta">Dulce momento</h2>
+                    <h2 className="titulotarjeta">Dulce Momento</h2>
                     <p className="ptarjeta">"Muy buena responsable y bello trabajo y buena calidad me han encantado mis stickers"</p>
                   </div>
                 </div>
@@ -63,7 +63,7 @@ function Comentarios() {
                   <div className="img-area">
                     <img src={sabores} alt="" className="imagen-central"/>
                   
-                    <h2 className="titulotarjeta">Mis sabores 7</h2>
+                    <h2 className="titulotarjeta">Mis Sabores 7</h2>
                     <p className="ptarjeta">"Simplemente muy responsable y excelente servicio 100% recomendable"</p>
                   </div>
                 </div>
@@ -83,7 +83,7 @@ function Comentarios() {
                   <div className="img-area">
                     <img src={cony} alt="" className="imagen-central"/>
                   
-                    <h2 className="titulotarjeta">Conny belleza</h2>
+                    <h2 className="titulotarjeta">Conny Belleza</h2>
                     <p className="ptarjeta">"Muy buena atención y puntualidad"<br /></p>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ function Comentarios() {
                   <div className="img-area">
                     <img src={nicol} alt="" className="imagen-central"/>
                   
-                    <h2 className="titulotarjeta">Nicole cakes</h2>
+                    <h2 className="titulotarjeta">Nicole Cakes</h2>
                     <p className="ptarjeta">"Recomendado 100% excelente trabajo y calidad y está además decir la simpatía con la que se comunicar"</p>
                   </div>
                 </div>
@@ -117,7 +117,7 @@ function Comentarios() {
                   <div className="img-area">
                     <img src={abuela} alt="" className="imagen-central"/>
                   
-                    <h2 className="titulotarjeta">Deliciasmamipatty</h2>
+                    <h2 className="titulotarjeta">Delicias Mami Patty</h2>
                     <p className="ptarjeta">"Gracias chiquilla de ojitos lindos me encanta tu trabajo y lo responsable que eres por eso no te cambio por nada por tu profesionalismo"</p>
                   </div>
                 </div>

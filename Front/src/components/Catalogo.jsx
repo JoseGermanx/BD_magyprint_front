@@ -40,7 +40,7 @@ function Catalogo() {
                         <a href="">
                         <button className="seccion">Decoración</button><br /></a>
                         <a href="">
-                        <button className="seccion">Papeleria</button><br /></a>
+                        <button className="seccion">Papelería</button><br /></a>
                         <a href="">
                         <button className="seccion">Recipientes</button><br /></a>
                         <a href="">

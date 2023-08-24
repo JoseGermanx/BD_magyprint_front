@@ -30,7 +30,7 @@ function Empresa() {
   return (
     <div id="empresa">
       <div id="info_empresas">
-        <p>Descubre Magyprint, la tienda de productos personalizadosmás creativos y originales. <br />
+        <p>Descubre Magyprint, la tienda de productos personalizados más creativos y originales. <br />
         Fundada por Margarita, Magyprint ofrece una amplia gama de artículos únicos para tu empresa, <br />
          desde tazas, llaveros, bolsas, botellas, mug térmico, poleras personalizadas, hasta cuadernos y <br />
          lo que quisieras crear personalizado. Lo que hace destacar a Magyprint es la posibilidad de que los <br />
@@ -92,7 +92,7 @@ function Empresa() {
               <div className="form-check">
                 <input className="form-check-input" type="checkbox" value="Papeleria" id="opcion3"
                   name="servicio[]" />
-                <label className="form-check-label" for="opcion3">Papeleria</label>
+                <label className="form-check-label" for="opcion3">Papelería</label>
               </div>
               <div className="form-check">
                 <input className="form-check-input" type="checkbox" value="Recipientes" id="opcion4"

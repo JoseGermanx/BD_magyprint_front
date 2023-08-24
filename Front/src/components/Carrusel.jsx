@@ -7,7 +7,7 @@ function Carrusel() {
         <div id="catego">
             <br /><br />
         <div className="container">
-          <h2 className="titulos">Categorias</h2>
+          <h2 className="titulos">Categorías</h2>
           <div id="carouselExampleIndicators2" className="carousel slide">
             <div className="carousel-indicators">
               <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
@@ -44,7 +44,7 @@ function Carrusel() {
                   <div className="card">
                     <img src={botella} className="card-img-top" alt="..." />
                     <div className="card-body">
-                      <h4 className="card-title titulotarjeta">Papeleria</h4>
+                      <h4 className="card-title titulotarjeta">Papelería</h4>
                     </div>
                   </div>
                   <div className="card d-none d-md-block">

@@ -24,7 +24,7 @@ function DetalleProducto() {
                             <button className="seccion">Accesorios</button><br />
                             <button className="seccion">Cotillón</button><br />
                             <button className="seccion">Decoración</button><br />
-                            <button className="seccion">Papeleria</button><br />
+                            <button className="seccion">Papelería</button><br />
                             <button className="seccion">Recipientes</button><br />
                             <button className="seccion">Vestimenta</button><br />
                         </div>
