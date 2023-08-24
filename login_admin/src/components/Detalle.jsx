@@ -6,6 +6,9 @@ import PostDetalleImg from './PostDetalle'
 
 import { usePosts } from "../context/PostContext";
 
+import { useState, useEffect } from "react";
+import { useParams } from "react-router-dom";
+
 
 
 
@@ -16,7 +19,21 @@ import { usePosts } from "../context/PostContext";
   } */
 
 function Detalle() {
-    const { posts } = usePosts();
+    const {posts} = usePosts();
+    
+
+
+
+    const { id } = useParams();
+
+    const [detalle, setDetalle] = useState();
+
+   
+   useEffect(() => {
+    setDetalle(listaPosts.find(post => post._id === id));
+   }, [listaPosts, id]);
+
+
     
     return (
 
@@ -25,18 +42,17 @@ function Detalle() {
         <div className="col-lg-4 custom-column">
             <h2 className="producto-titulo">Producto</h2><br />
 
-            
-            
-            <div >
-              
-            {posts.map((post) => (
-                            <PostDetalleImg post={post} key={post._id} />
-                            ))} 
-             
-               </div>
-            
-            
+          {/* {detalle._id? detalle.title : null} */}
 
+
+
+
+            
+           {/* {posts.map((post) => (
+                            <PostDetalleImg post={post} key={post._id} />
+                            ))}
+             */}
+         
 
             {/* <img src={tazon} className="producto" id="producto-imagen" alt="Producto" /> */}
             {/* <div className="img-ad">

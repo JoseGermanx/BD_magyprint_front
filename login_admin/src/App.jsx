@@ -33,15 +33,17 @@ function App() {
           <PostsSliderHomeProvider>
           <Routes>
 
-          <Route path="/" element={<InicioPage />} />
-          <Route path="/empresa" element={<EmpresaPage />} />
-          <Route path="/catalogo" element={<CatalogoPage />} />
-          <Route path="/nosotros" element={<NosotrosPage />} />
-          <Route path="/contacto" element={<ContactoPage />} />
-          <Route path="/catalogo/:id" element={<DetallePage />} />
+              <Route path="/" element={<InicioPage />} />
+              <Route path="/empresa" element={<EmpresaPage />} />
+              <Route path="/catalogo" element={<CatalogoPage />} />
+              <Route path="/detalle/:id" element={<DetallePage />} />
 
-            <Route path="/login" element={<LoginPage />} />
-            <Route path="/register" element={<RegisterPage />} />
+              <Route path="/nosotros" element={<NosotrosPage />} />
+              <Route path="/contacto" element={<ContactoPage />} />
+
+              <Route path="/login" element={<LoginPage />} />
+              <Route path="/register" element={<RegisterPage />} />
+
 
             <Route element={<ProtectedRoute />}>
               <Route path="/home" element={<HomePage />} />
