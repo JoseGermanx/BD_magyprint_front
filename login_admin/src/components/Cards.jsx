@@ -7,7 +7,7 @@ import toast from "react-hot-toast";
 function Cards ({post}) {
     
 
-    const handelGet = (id) => {
+    const handelGet = () => {
         toast((t) =>(
             <div className=" text-black text-center p-2">
                 <div id="contenido">
