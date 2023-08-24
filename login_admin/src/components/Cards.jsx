@@ -6,11 +6,10 @@ import toast from "react-hot-toast";
 
 function Cards ({post}) {
     
-
     const handelGet = () => {
         toast((t) =>(
             <div className=" text-black text-center p-2">
-                <div id="contenido">
+                <div>
                 <strong>{post.image && (<img src={post.image.url}/>)}</strong>
                 <h2>{post.title}</h2>
                 <h5>{post.description}</h5>
@@ -37,7 +36,7 @@ function Cards ({post}) {
             </figure>
             <div id="contenido">
               <h2>{post.title}</h2>
-              <h5>{post.description}</h5>
+              {/* <h5>{post.description}</h5> */}
               <a href="https://api.whatsapp.com/send/?phone=%2B56951386716&text=Hola%2C+necesito+informaci%C3%B3n+de+sus+productos&type=phone_number&app_absent=0">Cotizar</a>
             </div>
         </div>
@@ -45,5 +44,6 @@ function Cards ({post}) {
     </div>
     );
 } 
+
 
 export default Cards;
