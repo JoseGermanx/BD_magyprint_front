@@ -4,10 +4,24 @@ import img3 from "../imgemp/img/img_3_agenda.png"
 import "../css/empresa.css"
 import {PostEmpresa} from "./PostEmpresa";
 import { usePosts } from "../context/CompanyContext";
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 
 
 
 function Empresa() {
+  const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_c6mrytj', 'template_4p809k9', form.current, '_ePqjP4LpMNBAp7BQ')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            });
+    };
 
   const { posts } = usePosts();
 
@@ -45,20 +59,16 @@ function Empresa() {
         <div className="formulario">
           <h2>CUÉNTANOS TU PROYECTO</h2>
           <h5>Todos los campos marcados con un asterisco (*) son obligatorios.</h5>
-          <form id="projectForm">
+          <form id="projectForm" ref={form} onSubmit={sendEmail}>
             <div className="mb-3">
               <label for="nombre" className="form-label">Nombre<span className="text-danger">*</span></label>
-              <input type="text" className="form-control rounded-4 " id="nombre" name="nombre" required />
+              <input type="text" className="form-control rounded-4 " id="nombre" name="user_name" required />
             </div>
 
-            <div className="mb-3">
-              <label for="apellido" className="form-label">Apellido<span className="text-danger">*</span></label>
-              <input type="text" className="form-control rounded-4" id="apellido" name="apellido" required />
-            </div>
 
             <div className="mb-3">
               <label for="email" className="form-label">Email<span className="text-danger">*</span></label>
-              <input type="email" className="form-control rounded-4" id="email" name="email" required />
+              <input type="email" className="form-control rounded-4" id="email" name="user_email" required />
             </div>
 
 
@@ -70,43 +80,39 @@ function Empresa() {
             <div className="mb-3">
               <label for="servicio" className="form-label">Servicio</label>
               <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="opcion1" id="opcion1"
+                <input className="form-check-input" type="checkbox" value="Accesorios" id="opcion1"
                   name="servicio[]" />
                 <label className="form-check-label" for="opcion1">Accesorios</label>
               </div>
               <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="opcion2" id="opcion2"
+                <input className="form-check-input" type="checkbox" value="Decoración" id="opcion2"
                   name="servicio[]" />
                 <label className="form-check-label" for="opcion2">Decoración</label>
               </div>
               <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="opcion3" id="opcion3"
+                <input className="form-check-input" type="checkbox" value="Papeleria" id="opcion3"
                   name="servicio[]" />
                 <label className="form-check-label" for="opcion3">Papeleria</label>
               </div>
               <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="opcion4" id="opcion4"
+                <input className="form-check-input" type="checkbox" value="Recipientes" id="opcion4"
                   name="servicio[]" />
                 <label className="form-check-label" for="opcion4">Recipientes</label>
               </div>
               <div className="form-check">
-                <input className="form-check-input" type="checkbox" value="opcion5" id="opcion5"
+                <input className="form-check-input" type="checkbox" value="Vestimenta" id="opcion5"
                   name="servicio[]" />
                 <label className="form-check-label" for="opcion5">Vestimenta</label>
               </div>
-            </div>
+            </div> 
 
             <div className="mb-3">
               <label for="mensaje" className="form-label">Mensaje<span className="text-danger">*</span></label>
-              <textarea className="form-control no-resize rounded-4" id="mensaje" name="mensaje" rows="4"
+              <textarea className="form-control no-resize rounded-4" id="mensaje" name="message" rows="4"
                 required></textarea>
             </div>
-            <div className="mb-3">
-              <label for="formFile" className="form-label">Sube tu imagen</label>
-              <input className="form-control" type="file" id="formFile" accept=".jpg, .png, .gif"
-                title="Selecciona un archivo" />
-            </div>
-            <button type="submit" className="boton-c">Enviar</button>
+           
+            <button type="submit" className="bg-[#3fa09b] hover:bg-[#177571] px-4 py-2 rounded mt-2 text-white focus:outline-none disabled:gb-indigo-400">Enviar</button>
           </form>
         </div>
 

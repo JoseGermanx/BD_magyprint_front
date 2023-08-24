@@ -83,8 +83,8 @@
 
 .boton-c {
     padding: 8px 16px;
-    background-color: #3fa09b;
-    color: white;
+    background-color: red;
+    color: black;
     border: none;
     border-radius: 4px;
     cursor: pointer;
