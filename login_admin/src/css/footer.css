@@ -16,6 +16,9 @@
 }
 
 .link-maps {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
 }
@@ -26,6 +29,9 @@
 }
 
 .link-insta {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
 }
@@ -37,6 +43,9 @@
 }
 
 .link-ws {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
   text-decoration: none;
   color: inherit;
 }
@@ -44,6 +53,14 @@
 .wasap {
   width: 15%;
   margin-bottom: 5%;
+}
+
+.pagos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
 }
 
 .mediosdepago {
