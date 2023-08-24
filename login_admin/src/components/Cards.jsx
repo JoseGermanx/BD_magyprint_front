@@ -44,6 +44,6 @@ function Cards ({post}) {
     </div>
     </div>
     );
-}
+} 
 
 export default Cards;
