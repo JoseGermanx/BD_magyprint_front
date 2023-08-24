@@ -97,7 +97,7 @@ function Contacto() {
                 </div>
                 <div className="hor-ubi">
                     <div className="horario">
-                        <i className="icono fa-solid fa-clock fa-2xl" style={{ color: "#000000" }}></i>
+                        <i className="icono fa-solid fa-clock fa-2xl relojicon" style={{ color: "#000000" }}></i>
                         <h3>HORARIO DE ATENCIÓN</h3>
                         <p>Lunes a Viernes 9:00 AM a 18:00 PM <br /> Sábados y Domingos Cerrado</p>
                     </div>

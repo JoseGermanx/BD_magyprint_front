@@ -1,12 +1,10 @@
+ 
 #empresa #info_empresas p{
     font-family: 'roboto', sans-serif;
     font-weight: 400;
     font-size: 16px;
     height: auto;
     text-align: center;
-    
-
-
 }
 
 #empresa #productos {
@@ -21,7 +19,7 @@
 #empresa #titulo-productos {
     font-family: 'Roboto:wght@700', sans-serif;
     font-size: 40px;
-    color: #77C6C2;
+    color: #3fa09b;
     text-align: center;
     margin-top: 60px;
 }

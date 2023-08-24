@@ -7,12 +7,12 @@ import cony from "../imglogo/cony.png";
 import nahuel from "../imglogo/nahuel2.png";
 import nicol from "../imglogo/nicolcake.png";
 import abuela from "../imglogo/recetaabuela.png";
-import "../css/inicio.css";
+import "../css/comentarioslide.css";
+
 function Comentarios() {
   return (
-    <div id="comentario" className="container">
+    <div id="comentario" className="container-fluid">
       <h2 className="titulos">Confian en nosotros</h2>
-      <br />
       <div id="carouselExampleIndicators3" className="carousel slide">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" className="active"
@@ -25,31 +25,30 @@ function Comentarios() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-4" >
                 <div className="single-box">
                   <div className="img-area">
-                    <img src={pausan} alt="" /></div>
-                  <div className="img-text">
+                    <img src={pausan} alt="" className="imagen-central"/>
                     <h2 className="titulotarjeta">Delicias Pausan</h2>
                     <p>"Fui a buscar su trabajo se pasó Le quedaron hermosos los colores me encantan están full"</p>
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4"  >
                 <div className="single-box">
                   <div className="img-area">
-                    <img src={dulce} alt="" /></div>
-                  <div className="img-text">
+                    <img src={dulce} alt="" className="imagen-central"/>
+                  
                     <h2 className="titulotarjeta">Dulce momento</h2>
                     <p className="ptarjeta">"Muy buena responsable y bello trabajo y buena calidad me han encantado mis stickers"</p>
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4" >
                 <div className="single-box">
                   <div className="img-area">
-                    <img src={encanto} alt="" /></div>
-                  <div className="img-text">
+                    <img src={encanto} alt="" className="imagen-central"/>
+                  
                     <h2 className="titulotarjeta">Encantos L&C</h2>
                     <p className="ptarjeta">"Excelente atención, muy puntual, muy profesional con su trabajo la recomiendo 100%"</p>
                   </div>
@@ -59,33 +58,33 @@ function Comentarios() {
           </div>
           <div className="carousel-item">
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-4" >
                 <div className="single-box">
                   <div className="img-area">
-                    <img src={sabores} alt="" /></div>
-                  <div className="img-text">
+                    <img src={sabores} alt="" className="imagen-central"/>
+                  
                     <h2 className="titulotarjeta">Mis sabores 7</h2>
                     <p className="ptarjeta">"Simplemente muy responsable y excelente servicio 100% recomendable"</p>
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4" >
                 <div className="single-box">
                   <div className="img-area">
-                    <img src={marley} alt="" /></div>
-                  <div className="img-text">
+                    <img src={marley} alt="" className="imagen-central"/>
+                  
                     <h2 className="titulotarjeta">Muebles Marley</h2>
                     <p className="ptarjeta">"Muy buena experiencia puntualidad y seriedad en sus trabajos"</p>
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4" >
                 <div className="single-box">
                   <div className="img-area">
-                    <img src={cony} alt="" /></div>
-                  <div className="img-text">
+                    <img src={cony} alt="" className="imagen-central"/>
+                  
                     <h2 className="titulotarjeta">Conny belleza</h2>
-                    <p className="ptarjeta">"Muy buena atención y puntualidad"</p>
+                    <p className="ptarjeta">"Muy buena atención y puntualidad"<br /></p>
                   </div>
                 </div>
               </div>
@@ -93,31 +92,31 @@ function Comentarios() {
           </div>
           <div className="carousel-item">
             <div className="row">
-              <div className="col-md-4">
+              <div className="col-md-4" >
                 <div className="single-box">
                   <div className="img-area">
-                    <img src={nahuel} alt="" /></div>
-                  <div className="img-text">
+                    <img src={nahuel} alt="" className="imagen-central"/>
+                  
                     <h2 className="titulotarjeta">Nahuel</h2>
                     <p className="ptarjeta">"Excelente servicio rápida entrega de cotización y cumple con los días de entrega el resultado es bello"</p>
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4" >
                 <div className="single-box">
                   <div className="img-area">
-                    <img src={nicol} alt="" /></div>
-                  <div className="img-text">
+                    <img src={nicol} alt="" className="imagen-central"/>
+                  
                     <h2 className="titulotarjeta">Nicole cakes</h2>
                     <p className="ptarjeta">"Recomendado 100% excelente trabajo y calidad y está además decir la simpatía con la que se comunicar"</p>
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-4 imgslides">
                 <div className="single-box">
                   <div className="img-area">
-                    <img src={abuela} alt="" /></div>
-                  <div className="img-text">
+                    <img src={abuela} alt="" className="imagen-central"/>
+                  
                     <h2 className="titulotarjeta">Deliciasmamipatty</h2>
                     <p className="ptarjeta">"Gracias chiquilla de ojitos lindos me encanta tu trabajo y lo responsable que eres por eso no te cambio por nada por tu profesionalismo"</p>
                   </div>
@@ -136,9 +135,11 @@ function Comentarios() {
           <span className="carousel-control-next-icon" aria-hidden="true"></span>
           <span className="visually-hidden">Next</span>
         </button>
+        <br />
+        <br />
       </div>
     </div>
-    
+
   );
 }
 

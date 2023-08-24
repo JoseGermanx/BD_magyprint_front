@@ -20,19 +20,19 @@ function Carrusel() {
                   <div className="card">
                     <img src={tazon} className="card-img-top" alt="..." />
                     <div className="card-body">
-                      <h4 className="card-title titulotarjeta">Para ti</h4>
+                      <h4 className="card-title titulotarjeta">Accesorios</h4>
                     </div>
                   </div>
                   <div className="card d-none d-md-block">
                     <img src={botella} className="card-img-top" alt="..." />
                     <div className="card-body">
-                      <h4 className="card-title titulotarjeta">Para ti</h4>
+                      <h4 className="card-title titulotarjeta">Cotillón</h4>
                     </div>
                   </div>
                   <div className="card d-none d-md-block">
                     <img src={bolsa} className="card-img-top" alt="..." />
                     <div className="card-body">
-                      <h4 className="card-title titulotarjeta">Para ti</h4>
+                      <h4 className="card-title titulotarjeta">Decoración</h4>
 
                     </div>
                   </div>
@@ -44,19 +44,19 @@ function Carrusel() {
                   <div className="card">
                     <img src={botella} className="card-img-top" alt="..." />
                     <div className="card-body">
-                      <h4 className="card-title titulotarjeta">Para ti</h4>
+                      <h4 className="card-title titulotarjeta">Papeleria</h4>
                     </div>
                   </div>
                   <div className="card d-none d-md-block">
                     <img src={bolsa} className="card-img-top" alt="..." />
                     <div className="card-body">
-                      <h4 className="card-title titulotarjeta">Para ti</h4>
+                      <h4 className="card-title titulotarjeta">Recipientes</h4>
                     </div>
                   </div>
                   <div className="card d-none d-md-block">
                     <img src={tazon} className="card-img-top" alt="..." />
                     <div className="card-body">
-                      <h4 className="card-title titulotarjeta">Para ti</h4>
+                      <h4 className="card-title titulotarjeta">Vestimenta</h4>
 
                     </div>
                   </div>

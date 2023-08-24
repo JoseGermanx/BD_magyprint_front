@@ -31,13 +31,20 @@ function Catalogo() {
 
                     <div className="menu-container">
                         <h2 className="categorias">CATEGORÍAS DE PRODUCTOS</h2>
-                        <button className="seccion">Todos los productos</button><br />
-                        <button className="seccion">Accesorios</button><br />
-                        <button className="seccion">Cotillón</button><br />
-                        <button className="seccion">Decoración</button><br />
-                        <button className="seccion">Papeleria</button><br />
-                        <button className="seccion">Recipientes</button><br />
-                        <button className="seccion">Vestimenta</button><br />
+                        <a href="/catalogo">
+                        <button className="seccion">Todos los productos</button><br /></a>
+                        <a href="">
+                        <button className="seccion">Accesorios</button><br /></a>
+                        <a href="">
+                        <button className="seccion">Cotillón</button><br /></a>
+                        <a href="">
+                        <button className="seccion">Decoración</button><br /></a>
+                        <a href="">
+                        <button className="seccion">Papeleria</button><br /></a>
+                        <a href="">
+                        <button className="seccion">Recipientes</button><br /></a>
+                        <a href="">
+                        <button className="seccion">Vestimenta</button><br /></a>
                     </div>
 
                     <div className="pagination">

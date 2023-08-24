@@ -67,7 +67,7 @@
 }
 
 .formulario h2 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', sans-serif !important;
     font-size: 30px;
 }
 
@@ -93,4 +93,8 @@
 
 .mapa {
     margin-top: 25px;
+}
+
+.relojicon {
+    margin-bottom: 1em;
 }

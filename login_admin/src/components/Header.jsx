@@ -1,5 +1,5 @@
 import logo from '../img/logo.png'
-import "../css/banhe.css"
+import "../css/header.css"
 
 
 function Header() {
@@ -13,13 +13,13 @@ function Header() {
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                    <div className="navbarcollapse navbar-collapse" id="navbarSupportedContent">
+                        <ul id='' className="navbar-nav me-auto mb-2 mb-lg-0">
                         <div className="nav-item">
                         <a className="nav-divnk active" aria-current="page" href="/">INICIO</a>
                         </div>
                         <div className="nav-item">
-                        <a className="nav-divnk" href="#">CATALOGO</a>
+                        <a className="nav-divnk" href="/catalogo">CATALOGO</a>
                         </div>
                         <div className="nav-item">
                         <a className="nav-divnk" href="/empresa">EMPRESAS</a>
