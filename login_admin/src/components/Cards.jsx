@@ -2,10 +2,10 @@
 import "../css/empresa.css";
 
 import toast from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+
 
 function Cards ({post}) {
-    const navigate = useNavigate();
+    
 
     const handelGet = (id) => {
         toast((t) =>(
