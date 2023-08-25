@@ -18,7 +18,7 @@ function Footer() {
               <h5 className="font-bold">Ubicación</h5>
               <img src={ubicacionn} className="ubicacion" alt="" />
               <p className="font-medium">Av. Brasil 7948, Renca</p>
-            </a>
+            </a><br />
           
         </div>
         <div className="col-md-3 i-w">
