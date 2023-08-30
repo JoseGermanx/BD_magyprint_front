@@ -14,7 +14,8 @@ const app = express()
 
 app.use(cors({
     /* origin: 'http://localhost:5173', */
-    origin: 'https://magyprint.cl',
+    /* origin: 'https://magyprint.cl', */
+    origin: '*',
     credentials: true
 }))
 app.use(morgan('dev'))
