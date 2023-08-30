@@ -13,8 +13,8 @@ import sliderHomeRoutes from "./routes/sliderhome.routes.js"
 const app = express()
 
 app.use(cors({
-    origin: 'http://localhost:5173',
-    /* origin: 'https://magyprint.cl', */
+    /* origin: 'http://localhost:5173', */
+    origin: 'https://magyprint.cl',
     credentials: true
 }))
 app.use(morgan('dev'))
